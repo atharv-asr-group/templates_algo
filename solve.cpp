@@ -1,14 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    // every operation happens in constant time.
-    stack<int> st;
-    st.push(1);
-    st.push(2);
-    st.push(3);
-    st.emplace(5);//{5,3,2,1}
+    queue<int> q;
+    q.push(1);
+    q.push(2);
+    q.emplace(4);//{1,2,4}
 
-    cout<<st.top();//5
-    st.pop();//{1,2,3}
+    q.back();//4
+    q.front();//1
     return 0;
 }
